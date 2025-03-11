@@ -1,0 +1,135 @@
+.footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 10px;
+    align-items: start;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start; /* Align to the start of the first column */
+}
+
+.footer-logo p {
+    color: #383838;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.icon-gap {
+    margin-right: 15px; /* Adjust the value as needed */
+}
+
+.footer-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left; /* Align links to the left */
+}
+
+.footer-links {
+    font-size: 18px;
+    color: #383838;
+}
+
+/* Newsletter Styles */
+.footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-newsletter h3 {
+    font-size: 24px;
+    color: #383838;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-newsletter p {
+    font-size: 16px;
+    color: #383838;
+    text-align: center;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #383838;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background-color: #555555;
+}
+
+.footer-copyright {
+    grid-column: span 3; /* Span across all 3 columns for copyright */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        grid-template-columns: repeat(1, 1fr); /* Stack items vertically on smaller screens */
+        gap: 20px;
+    }
+    .footer-logo {
+        gap: 10px;
+        align-items: end;
+    }
+    .footer-logo img {
+        width: 40px;
+    }
+    .footer-logo p {
+        font-size: 25px;
+    }
+    .footer-links-container {
+        gap: 10px;
+    }
+    .footer-links {
+        font-size: 14px;
+    }
+    .footer-newsletter input, .footer-newsletter button {
+        width: 90%; /* Adjust for small screens */
+        max-width: none;
+    }
+    .footer-copyright {
+        font-size: 13px;
+    }
+}
